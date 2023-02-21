@@ -23,7 +23,7 @@ outline:none;
 <input id="btn" type="button" value="Change background">
 </div>
 <script>
-document.getElementById("btn")
+document.getElementById("btn")addEventListener("click", colorchange);
 function colorchange() {
 console.log(Math.random() * 10000000);
 var color = '#' + Math.floor(Math.random() * 10000000).toString(16);
